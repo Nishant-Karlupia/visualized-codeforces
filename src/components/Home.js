@@ -291,6 +291,8 @@ const Home = (props) => {
                 maxDownCon = con.contestId;
             }
         });
+        if(best===1e9)best=0;
+        if(worst===-1e9)worst=0;
         
         setContest({ total: totalCon, best_rank: best, best_rank_con: bestCon, worst_rank: worst, worst_rank_con: worstCon, maxUp: maxUp, maxUpCon: maxUpCon, maxDown: maxDown, maxDownCon: maxDownCon });
         
